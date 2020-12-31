@@ -1,0 +1,138 @@
+/*
+ * Copyright(c) 2020
+ * 
+ * All rights reserved.
+ * 
+ * @author Indrajith C
+ * 
+ */
+
+@import "./background.scss";
+
+.home-page-wrapper {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: 1;
+}
+
+.z-index-activator {
+  z-index: 1;
+  &.z-active {
+    z-index: 2;
+  }
+}
+
+/* ============= PROFILE - JUMBOTRON ============== */
+.jumbotron-profile {
+  @extend .d-flex;
+  @extend .w-100;
+  @extend .flex-column;
+
+  .main-image {
+    text-align: center;
+    > img {
+      border-radius: 50%;
+      border: 3px solid $white;
+      padding: 2px;
+    }
+  }
+
+  .main-name {
+    @extend .text-center;
+    @extend .py-4;
+    @extend .px-2;
+    > h1 {
+      @extend .fw-bolder;
+
+      color: $white;
+      font-family: $title-font;
+    }
+
+    .subtitle {
+      @extend .pt-2;
+      > h4,
+      > p {
+        @extend .fw-bold;
+        @extend .h5;
+
+        color: $gray;
+        font-family: $title-font;
+      }
+      > p {
+        @extend .fst-italic;
+      }
+    }
+  }
+
+  .social-link-home-wrapper {
+    @extend .m-auto;
+    @extend .pt-3;
+
+    .social-links-wrapper {
+      @extend .px-2;
+    }
+    .underline {
+      @extend .mt-2;
+      border-bottom: 3px solid $white;
+      max-width: 100%;
+    }
+
+    .copyright-wrapper {
+      @extend .mt-2;
+    }
+  }
+}
+
+/* ============= SOCIAL LINKS ============== */
+.social-links-wrapper {
+  .icon-wrapper {
+    @extend .d-flex;
+    @extend .p-1;
+    @extend .justify-content-center;
+
+    a {
+      @extend .d-flex;
+      cursor: pointer;
+    }
+  }
+  i.bi {
+    color: $white;
+    font-size: 1rem;
+  }
+  @include media-breakpoint-up(sm) {
+    i.bi {
+      font-size: 1.5rem;
+    }
+  }
+  @include media-breakpoint-up(md) {
+    i.bi {
+      font-size: 1.75rem;
+    }
+  }
+  @include media-breakpoint-up(lg) {
+    i.bi {
+      font-size: 2rem;
+    }
+  }
+}
+
+/* ===================== COPYRIGHT ===============  */
+
+.copyright-wrapper {
+  .content-text {
+    @extend .m-0;
+    @extend .small;
+    @extend .px-1;
+
+    color: $gray;
+
+    span,
+    a {
+      padding: 0 5px;
+      color: $white;
+    }
+  }
+}

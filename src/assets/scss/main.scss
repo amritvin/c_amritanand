@@ -1,0 +1,29 @@
+/*
+ * Copyright(c) 2020
+ * 
+ * All rights reserved.
+ * 
+ * @author Indrajith C
+ *
+ */
+
+@import url("https://fonts.googleapis.com/css2?family=Charmonman:wght@400;700&display=swap");
+
+@import "../../../node_modules/bootstrap/scss/bootstrap.scss";
+@import "./custom/animate.css";
+
+/* =========== VARIABLES ============== */
+
+/* Colors */
+$white: #fff;
+$black: #000;
+$gray: grey;
+
+/* Fonts */
+$title-font: "Charmonman", cursive;
+
+/* ==== CUSTOM PAGE STYLES ===== */
+@import "./icon.scss";
+@import "./common.scss";
+@import "./home.scss";
+@import "./about.scss";
