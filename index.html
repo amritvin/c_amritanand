@@ -190,19 +190,44 @@ top:25%;
   -webkit-animation:move-clouds-back 200s linear infinite;
   animation:move-clouds-back 200s linear infinite;
 }
-
+.light-mode {
+  background-color: white;
+  color: grey;
+}
 </style>
 <script>
 
+function myFunction() {
+  var element = document.body;
+  element.classList.toggle("light-mode");
+}
 </script>
 
 <body  >
 
 <div id="allvis">
+<!-- Rounded switch -->
 
-<div class="stars"></div>
-<div class="twinkling"></div>
-<div class="clouds"></div>
+
+<div class="newsc" >
+<a <button onclick="myFunction()">Toggle dark mode</button></li></a>
+<div id="canvas">
+        <div id="heading">   
+            <h3></h3>
+			 <a> Last Update </a>
+            <a> <h4 id="date"></h4> </a>
+        </div>
+
+        <div id="feed-textarea">
+            <ul></ul>
+        </div>
+		        <div id="feed-textarea2">
+            <ul></ul>
+        </div>
+    </div>
+    <script src="https://static.sekandocdn.net/static/feednami/feednami-client-v1.1.js"></script>
+    <script src="app.js"></script>
+</div>
 <div id="mydiv">
 
 <img src="images/me12.jpeg" alt="Avatar" height="100" width="100">
